@@ -1,0 +1,203 @@
+.section_bus_tickets {
+    padding: 55px 0px;
+}
+
+.w-22 {
+    width: 15% !important;
+}
+
+.dis-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-bold {
+    font-weight: 600;
+    color: #000;
+}
+
+ul.sort-sec li a {
+    font-size: 14px;
+}
+
+.ticketsDetails {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.font-s {
+    color: #878686;
+    font-size: 12px;
+}
+
+ul.sort-sec {
+    display: flex;
+    color: black
+}
+
+ul.sort-sec li {
+    width: 12%;
+    padding: 0 12px;
+}
+
+li.filterlist.w-22 {
+    width: 22%;
+}
+
+.row-one ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+ 
+}
+
+.row-one {
+    width: 1076px;
+    overflow-x: auto;
+}
+
+.busFound {
+    font-size: 14px;
+}
+
+.larg_font {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fontMDtext {
+    font-size: 15px;
+    color: #878686;
+}
+
+.fontNolmal.larg_font {
+    font-weight: 400;
+}
+
+.starRat span {
+    background-color: #f00;
+}
+
+.starRat span {
+    background-color: #ffae02;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.starRat span i {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.redtext {
+    color: #f00;
+}
+
+.marTop44 {
+    margin-top: 44px;
+}
+
+.marTop10 {
+    margin-top: 10px;
+}
+
+.inrPrice dl {
+    text-decoration: line-through;
+    padding: 0 8px
+}
+
+.font-s.inrPrice {
+    display: flex;
+    line-height: 22px;
+}
+
+.inrPrice strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.saleIcon i {
+    font-size: 16px;
+    color: #6f0dc5;
+}
+
+.row-two {
+    display: flex;
+    width: 1076px;
+}
+
+.amenities-ul {
+    display: flex;
+}
+
+ul.amenities-ul li a i {
+    color: #6c6c6c;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.liveTraking a {
+    background-color: #eee;
+    padding: 4px 8px 3px;
+    font-size: 13px;
+    color: #000;
+    display: flex;
+    margin: 0 12px;
+}
+
+.liveTraking a i {
+    font-size: 16px;
+    color: #000;
+    padding-right: 6px;
+}
+
+.returnTrip p {
+    color: #f00;
+    margin-bottom: 0;
+    margin-top: 3px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.row-three {
+    display: flex;
+    justify-content: start;
+    width: 1076px;
+}
+
+.bottom-panel {
+    display: flex;
+    color: black;
+}
+
+.viewSeatsBtn a {
+    display: inline-block;
+    padding: 6px 16px 7px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: .1s;
+    border: none;
+    text-align: center;
+    background-color: #281b84;
+    color: #fff;
+}
+
+ul.bottom-panel .amenties span {
+    font-size: 14px;
+    padding: 0 20px;
+    border-right: 1px solid #aaa;
+}
+
+ul.bottom-panel .amenties:last-child span {
+    border-right: none;
+}

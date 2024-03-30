@@ -1,0 +1,474 @@
+.section_bus_tickets {
+    padding: 60px 0;
+}
+
+.w-22 {
+    width: 22%;
+}
+
+.dis-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-bold {
+    font-weight: 600;
+    color: #000;
+}
+
+ul.sort-sec li a {
+    font-size: 14px;
+}
+
+.ticketsDetails {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 10px;
+    width: 1076px
+}
+
+.sort-results {
+    overflow-x: auto;
+}
+
+.sort-results::-webkit-scrollbar {
+    height: 4px;
+}
+
+.sort-results::-webkit-scrollbar-thumb {
+    background-color: #6c6c6c;
+    border-radius: 5px;
+}
+
+.font-s {
+    color: #878686;
+    font-size: 12px;
+}
+
+ul.sort-sec {
+    display: flex;
+}
+
+ul.sort-sec li {
+    width: 12%;
+    padding: 0 12px;
+}
+
+li.filterlist.w-22 {
+    width: 22%;
+}
+
+.row-one ul {
+    display: flex;
+}
+
+.busFound {
+    font-size: 14px;
+}
+
+.larg_font {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fontMDtext {
+    font-size: 15px;
+    color: #878686;
+}
+
+.fontNolmal.larg_font {
+    font-weight: 400;
+}
+
+.starRat span {
+    background-color: #f00;
+}
+
+.starRat span {
+    background-color: #ffae02;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.starRat span i {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.redtext {
+    color: #f00;
+}
+
+.marTop44 {
+    margin-top: 44px;
+}
+
+.marTop10 {
+    margin-top: 10px;
+}
+
+.inrPrice dl {
+    text-decoration: line-through;
+    padding: 0 8px
+}
+
+.font-s.inrPrice {
+    display: flex;
+    line-height: 22px;
+}
+
+.inrPrice strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.saleIcon i {
+    font-size: 16px;
+    color: #6f0dc5;
+}
+
+.row-two {
+    display: flex;
+}
+
+.amenities-ul {
+    display: flex;
+}
+
+ul.amenities-ul li a i {
+    color: #6c6c6c;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.liveTraking a {
+    background-color: #eee;
+    padding: 4px 8px 3px;
+    font-size: 13px;
+    color: #000;
+    display: flex;
+    margin: 0 12px;
+}
+
+.liveTraking a i {
+    font-size: 16px;
+    color: #000;
+    padding-right: 6px;
+}
+
+.returnTrip p {
+    color: #f00;
+    margin-bottom: 0;
+    margin-top: 3px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.row-three {
+    display: flex;
+    justify-content: end;
+}
+
+.bottom-panel {
+    display: flex;
+}
+
+.viewSeatsBtn a {
+    display: inline-block;
+    padding: 6px 16px 7px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: .1s;
+    border: none;
+    text-align: center;
+    background-color: #281b84;
+    color: #fff;
+}
+
+ul.bottom-panel .amenties span {
+    font-size: 14px;
+    padding: 0 20px;
+    border-right: 1px solid #aaa;
+}
+
+ul.bottom-panel .amenties:last-child span {
+    border-right: none;
+}
+
+/* openMoreDetails */
+
+.openMoreDetails {
+    background: #e7e6e6;
+    padding: 20px 0;
+}
+
+.seatPrice {
+    border-bottom: 1px #d5d5d5 solid;
+    padding: 0 20px;
+    position: relative;
+}
+
+.seatPrice .nav-pills .nav-item {
+    padding-right: 16px;
+}
+
+.seatPrice .nav-pills .nav-link {
+    background-color: #fff;
+    color: #000;
+    border-radius: 0;
+    font-weight: 600;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.seatPrice .nav-pills .nav-link.active,
+.seatPrice .nav-pills .show>.nav-link {
+    background-color: #000;
+    color: #fff;
+}
+
+.selectSheatsSec {
+    padding-top: 26px;
+}
+
+.busSeats span {
+    transform: rotate(270deg);
+    color: #b7b7b7;
+}
+
+.meddleChair {
+    text-align: end;
+}
+
+.mainbusbg {
+    /* display: flex; */
+    background-color: #fff;
+    padding: 12px;
+    border-top: 5px solid #281b84;
+    width: 342px;
+}
+
+.driveSeat {
+    border-bottom: 1px solid #aaa;
+    padding-right: 20px;
+}
+
+.seatArea {
+    padding-left: 15px;
+}
+
+.seatPriceText {
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    color: #000;
+}
+
+/* Add this CSS to your stylesheet or style tag */
+.seatData {
+    padding: 20px;
+}
+
+.seatGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Adjust the number of columns as needed */
+    gap: 10px;
+    /* Adjust the gap between seats */
+}
+
+.seatItem {
+    color: currentcolor;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.availavleSeats {
+    color: currentcolor;
+    cursor: pointer;
+}
+
+.bookedSeats {
+    background-color: red;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabPopup {
+    padding-right: 40px;
+}
+
+.boardingAndDropPoint {
+    background: #fff;
+}
+
+.boardingAndDropPoint ul#pills-tab {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px 0 0;
+}
+
+.boardingAndDropPoint .nav-pills .nav-link {
+    color: #818181;
+}
+
+.boardingAndDropPoint .nav-pills .nav-link.active,
+.boardingAndDropPoint .nav-pills .show>.nav-link {
+    color: #281b84;
+    background-color: transparent;
+    font-weight: 500;
+    border-bottom: 4px solid #281b84;
+    border-radius: 0;
+}
+
+.radioButton {
+    padding: 0 20px;
+    height: 100px;
+    overflow: auto;
+}
+
+.radioButton::-webkit-scrollbar {
+    width: 6px;
+}
+
+.radioButton::-webkit-scrollbar-thumb {
+    background: #281b84;
+}
+
+.radioButton::-webkit-scrollbar-track {
+    background: #d6d6d6;
+}
+
+.radioButton .form-check {
+    padding-bottom: 30px;
+}
+
+.radioButton .form-check .form-check-label {
+    display: flex;
+}
+
+.radioButton .form-check .form-check-label .startTime {
+    padding: 0 30px;
+}
+
+.radioButton .form-check .form-check-label span h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #898888;
+}
+
+.radioButton .form-check .form-check-label span p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 80px;
+}
+
+.bottomPrice {
+    border-top: 1px solid #aaa;
+    padding: 20px;
+}
+
+.duringpayment {
+    display: flex;
+    justify-content: space-between;
+}
+
+span.amountTaxes {
+    font-size: 14px;
+    color: #aaa;
+}
+
+span.inrprice {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.continueBtn {
+    background: #281b84;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    padding: 7px 0px;
+    margin-top: 8px;
+}
+
+.single_dropping {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.ticketsDetails:hover {
+    box-shadow: 0px 0px 10px #aaaaaa61;
+}
+
+.availavleSeats1 {
+    background-color: #000;
+}
+
+i.fi.fi-br-steering-wheel {
+    padding: 0 17px;
+    font-size: 22px;
+    color: #6c6c6c;
+}
+
+.seatingSpace {
+    padding-top: 20px;
+}
+
+.contucteur {
+    background-color: #f4f4f4;
+    padding: 5px 30px;
+}
+
+.seat_persons1 {
+    display: flex;
+}
+
+.seat_persons1 div span {
+    margin: 6px 14.5px 6px 14.5px;
+    color: #6c6c6c;
+    padding: 0px 0;
+    height: 22px;
+    display: inline-block;
+}
+
+.contucteur span {
+    font-weight: 600;
+}
+
+.sort_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 1076px;
+}
+
+.sort_section li {
+    padding-left: 10px;
+}
