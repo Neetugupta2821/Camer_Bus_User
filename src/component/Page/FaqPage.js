@@ -1,9 +1,16 @@
 import React from 'react'
+<<<<<<< HEAD
 import { useTranslation } from 'react-i18next';
 
 
 export default function FaqPage() {
     const { t, i18n } = useTranslation();
+=======
+
+
+export default function FaqPage() {
+
+>>>>>>> origin/master
 
     return (
         <>
@@ -25,7 +32,11 @@ export default function FaqPage() {
                             <div className="enjoy_journey text-center">
                                 <p className="smallTitle">FAQ</p>
                                 <div className="mainHeading">
+<<<<<<< HEAD
                                     <h2>{t('Frequently Asked Questions')}</h2>
+=======
+                                    <h2>Frequently Asked Questions</h2>
+>>>>>>> origin/master
                                 </div>
                             </div>
                         </div>
@@ -41,7 +52,11 @@ export default function FaqPage() {
                                         aria-controls="collapseOne"
                                        
                                     >
+<<<<<<< HEAD
                                        {t("What is Departure time for VIP Buses ?")}
+=======
+                                        What is Departure time for VIP Buses ?
+>>>>>>> origin/master
                                     </button>
                                 </h2>
                                 <div
@@ -52,7 +67,15 @@ export default function FaqPage() {
                                 >
                                     <div className="accordion-body">
                                         <p>
+<<<<<<< HEAD
                                             {t('Yes, tickets purchased online can be cancelled. Using the amour mezam booking app, go to my trips and then follow the instructions, Note that online tickets can only be cancelled before the stated departure time, it is not possible to cancel tickets after the departure time')}.
+=======
+                                            Yes, tickets purchased online can be cancelled. Using the
+                                            amour mezam booking app, go to my trips and then follow the
+                                            instructions, Note that online tickets can only be cancelled
+                                            before the stated departure time, it is not possible to cancel
+                                            tickets after the departure time.
+>>>>>>> origin/master
                                         </p>
                                     </div>
                                 </div>
@@ -68,7 +91,11 @@ export default function FaqPage() {
                                         aria-controls="collapseTwo"
                                               
                                     >
+<<<<<<< HEAD
                                        {t("Can i cancel the tickets i purchased online?")}
+=======
+                                        Can i cancel the tickets i purchased online?
+>>>>>>> origin/master
                                     </button>
                                 </h2>
                                 <div
@@ -79,7 +106,15 @@ export default function FaqPage() {
                                 >
                                     <div className="accordion-body">
                                         <p>
+<<<<<<< HEAD
                                         {t('Yes, tickets purchased online can be cancelled. Using the amour mezam booking app, go to my trips and then follow the instructions, Note that online tickets can only be cancelled before the stated departure time, it is not possible to cancel tickets after the departure time')}.
+=======
+                                            Yes, tickets purchased online can be cancelled. Using the
+                                            amour mezam booking app, go to my trips and then follow the
+                                            instructions, Note that online tickets can only be cancelled
+                                            before the stated departure time, it is not possible to cancel
+                                            tickets after the departure time.
+>>>>>>> origin/master
                                         </p>
                                     </div>
                                 </div>
@@ -95,7 +130,11 @@ export default function FaqPage() {
                                         aria-expanded="false"
                                         aria-controls="collapseThree"
                                     >
+<<<<<<< HEAD
                                       {t('I can not find trips to or from Buea, Limbe, Tiko and Kumba.')}
+=======
+                                        I can't find trips to or from Buea, Limbe, Tiko and Kumba.
+>>>>>>> origin/master
                                     </button>
                                 </h2>
                                 <div
@@ -106,7 +145,15 @@ export default function FaqPage() {
                                 >
                                     <div className="accordion-body">
                                         <p>
+<<<<<<< HEAD
                                         {t('Yes, tickets purchased online can be cancelled. Using the amour mezam booking app, go to my trips and then follow the instructions, Note that online tickets can only be cancelled before the stated departure time, it is not possible to cancel tickets after the departure time')}.
+=======
+                                            Yes, tickets purchased online can be cancelled. Using the
+                                            amour mezam booking app, go to my trips and then follow the
+                                            instructions, Note that online tickets can only be cancelled
+                                            before the stated departure time, it is not possible to cancel
+                                            tickets after the departure time.
+>>>>>>> origin/master
                                         </p>
                                     </div>
                                 </div>
@@ -121,7 +168,11 @@ export default function FaqPage() {
                                         aria-expanded="false"
                                         aria-controls="collapseFour"
                                     >
+<<<<<<< HEAD
                                         {t('What Happens, if I come late to the bus station?')}
+=======
+                                        What Happens, if I come late to the bus station?
+>>>>>>> origin/master
                                     </button>
                                 </h2>
                                 <div
@@ -132,7 +183,15 @@ export default function FaqPage() {
                                 >
                                     <div className="accordion-body">
                                         <p>
+<<<<<<< HEAD
                                         {t('Yes, tickets purchased online can be cancelled. Using the amour mezam booking app, go to my trips and then follow the instructions, Note that online tickets can only be cancelled before the stated departure time, it is not possible to cancel tickets after the departure time')}.
+=======
+                                            Yes, tickets purchased online can be cancelled. Using the
+                                            amour mezam booking app, go to my trips and then follow the
+                                            instructions, Note that online tickets can only be cancelled
+                                            before the stated departure time, it is not possible to cancel
+                                            tickets after the departure time.
+>>>>>>> origin/master
                                         </p>
                                     </div>
                                 </div>

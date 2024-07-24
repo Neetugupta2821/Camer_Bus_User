@@ -11,16 +11,24 @@ import map from '../component/image/map.png'
 import wellet from '../component/image/wallet.png'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import { useTranslation } from 'react-i18next';
+<<<<<<< HEAD
 import DatePicker, { DateObject } from 'react-multi-date-picker';
 import i18n from 'i18next';
 export default function BookYourTicket() {
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
+=======
+import i18n from 'i18next';
+export default function BookYourTicket() {
+    const { t, i18n } = useTranslation();
+    const navigate = useNavigate();
+>>>>>>> origin/master
     const [source, setSource] = useState("");
     const [suggestion, setSuggestion] = useState([]);
     const [selectedSuggestion, setSelectedSuggestion] = useState(null);
     const [errors, setErrors] = useState({});
     const [submitting, setSubmitting] = useState(false);
+<<<<<<< HEAD
     const [color, setcolor] = useState("")
     const today = new Date();
     const dropdownRef = useRef(null);
@@ -50,10 +58,18 @@ export default function BookYourTicket() {
     const minDate = today.toISOString().split('T')[0];
     const handleStyleType = () => {
 
+=======
+    const today = new Date();
+    const [color, setcolor] = useState("")
+    const minDate = today.toISOString().split('T')[0];
+    const handleStyleType = () => {
+        console.log("handleStyleType is called");
+>>>>>>> origin/master
         setcolor({
             height: '300px'
         });
     }
+<<<<<<< HEAD
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -105,15 +121,34 @@ export default function BookYourTicket() {
         }
         if (!date) {
             errors.date = t("Date is required");
+=======
+    const validateValues = () => {
+        let errors = {};
+        if (!source) {
+            errors.source = "Departure City is required";
+        } else if (!/^[A-Za-z ]{1,20}$/.test(source)) {
+            errors.source = "Source must contain only alphabets";
+        }
+        if (!destination) {
+            errors.destination = "Arrival City is required";
+        } else if (!/^[A-Za-z ]{1,20}$/.test(destination)) {
+            errors.destination = "Destination must contain only alphabets";
+        }
+        if (!date) {
+            errors.date = "Date is required";
+>>>>>>> origin/master
         }
 
         return errors;
     };
+<<<<<<< HEAD
     const isTextOnly = (text) => {
         const textPattern = /^[A-Za-z\s]+$/; // Regular expression for text-only (letters and spaces)
         return textPattern.test(text);
     };
 
+=======
+>>>>>>> origin/master
     const handleSource = (e) => {
         setSource(e.target.value);
 
@@ -121,14 +156,22 @@ export default function BookYourTicket() {
         axios.get(`${BaseUrl}allStops`, {
             params: { source: e.target.value }
         }).then((response) => {
+<<<<<<< HEAD
             // console.log(response.data.stop_details);
+=======
+            console.log(response.data.stop_details);
+>>>>>>> origin/master
             const typeData = response.data.stop_details;
 
             const result = typeData.filter((item) => {
                 return item && item.stopName &&
                     item.stopName.toLowerCase().includes(e.target.value.toLowerCase());
             });
+<<<<<<< HEAD
             // console.log(result);
+=======
+            console.log(result);
+>>>>>>> origin/master
 
             setSuggestion(result);
         }).catch((error) => {
@@ -141,17 +184,27 @@ export default function BookYourTicket() {
 
 
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     const handleSuggestionClick = (suggestion) => {
         setSource(suggestion);
         setSelectedSuggestion(suggestion);
         setSuggestion([]);
+<<<<<<< HEAD
     };
 
     const [destination, setDestination] = useState("");
     const [destinationSuggestion, setDestinationSuggestion] = useState([]);
     const [selectedSuggestion1, setSelectedSuggestion1] = useState(null);
 
+=======
+    }
+    const [destination, setDestination] = useState("");
+    const [destinationSuggestion, setDestinationSuggestion] = useState([]);
+    const [selectedSuggestion1, setSelectedSuggestion1] = useState(null);
+>>>>>>> origin/master
     const handleDestination = (e) => {
         setDestination(e.target.value);
 
@@ -159,14 +212,22 @@ export default function BookYourTicket() {
         axios.get(`${BaseUrl}allStops`, {
             params: { destination: e.target.value }
         }).then((response) => {
+<<<<<<< HEAD
             // console.log(response.data.stop_details);
+=======
+            console.log(response.data.stop_details);
+>>>>>>> origin/master
             const typeData = response.data.stop_details;
 
             const result = typeData.filter((item) => {
                 return item && item.stopName &&
                     item.stopName.toLowerCase().includes(e.target.value.toLowerCase());
             });
+<<<<<<< HEAD
             // console.log(result);
+=======
+            console.log(result);
+>>>>>>> origin/master
             setDestinationSuggestion(result)
 
         }).catch((error) => {
@@ -175,16 +236,23 @@ export default function BookYourTicket() {
 
 
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     const handleSuggestionClick1 = (destinationSuggestion) => {
         setDestination(destinationSuggestion);
         setSelectedSuggestion1(destinationSuggestion);
         setDestinationSuggestion([]);
     };
+<<<<<<< HEAD
 
     const [date, setDate] = useState(format(new Date(), 'yyyy-MM-dd'));
 
 
+=======
+    const [date, setDate] = useState(format(new Date(), 'yyyy-MM-dd'));
+>>>>>>> origin/master
     const handleSubmit = (e) => {
         e.preventDefault();
         const validationErrors = validateValues();
@@ -198,12 +266,20 @@ export default function BookYourTicket() {
                 setSubmitting(true);
                 if (response?.status === 200) {
 
+<<<<<<< HEAD
                     navigate('/SearchBus', { state: { data: response.data.trips, sourceType: source, destinationType: destination, date: date } });
+=======
+                    navigate('/SearchBus', { state: { data: response.data.trips, sourceType: source, destinationType: destination } });
+>>>>>>> origin/master
                 } else {
                     alert(response?.message);
                 }
             }).catch((error) => {
+<<<<<<< HEAD
                 swal.fire(t("No matching trips found for the selected date"));
+=======
+                swal.fire("No matching trips found for the selected date");
+>>>>>>> origin/master
                 console.log(error);
 
             });
@@ -217,6 +293,7 @@ export default function BookYourTicket() {
             setErrors(validationErrors);
         }
     }
+<<<<<<< HEAD
     const [selectedOption, setSelectedOption] = useState('oneway');
 
     const handleOptionChange = (event) => {
@@ -261,6 +338,10 @@ export default function BookYourTicket() {
 
     }
 
+=======
+    localStorage.setItem("source", source);
+    localStorage.setItem('destination', destination);
+>>>>>>> origin/master
     return (
         <>
             <section className="agencies">
@@ -272,6 +353,7 @@ export default function BookYourTicket() {
                         <div className="container">
                             <div className="formBgColor1">
                                 <div className="row">
+<<<<<<< HEAD
                                     <div className="col-lg-4">
                                         <div className="callNowSection">
                                             <h3>{t('Call Now!')}</h3>
@@ -282,10 +364,23 @@ export default function BookYourTicket() {
                                                 <div className="callText">
                                                     <label>{t('Call for detail information')}</label>
                                                     <h2>+237 6 77 63 25 45</h2>
+=======
+                                    <div className="col-md-4">
+                                        <div className="callNowSection">
+                                            <h3>Call Now !</h3>
+                                            <div className="callNow">
+                                                <span className="callIcon">
+                                                    <i className="material-icons"><LocalPhoneIcon/></i>
+                                                </span>
+                                                <div className="callText">
+                                                    <label>Call for detail information</label>
+                                                    <h2>+91-000-000-0000</h2>
+>>>>>>> origin/master
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+<<<<<<< HEAD
 
                                     <div className="col-lg-8">
                                         <div className="onlineBooking">
@@ -560,6 +655,116 @@ export default function BookYourTicket() {
                       </div>
                     </div> */}
 
+=======
+                                    <div className="col-md-8">
+                                        <div className="onlineBooking">
+                                            <div className="bookimg_Details">
+                                                <div className="bookimg">
+                                                    <img src={wellet}  alt="" />
+                                                </div>
+                                                <p className="ps-4">{t('BUY YOUR TICKET HERE')}</p>
+                                            </div>
+                                            <form className="row" onSubmit={handleSubmit}>
+                                                <div className="col-lg-4 col-md-6 col-sm-12">
+                                                    <div className="selectFromLocation" onChange={handleStyleType}>
+                                                        <div>
+                                                            <input
+                                                                id="outlined-basic"
+                                                                placeholder="Departure City"
+                                                                variant="outlined"
+                                                                onChange={handleSource}
+                                                                value={source}
+                                                                name="source"
+                                                                onKeyPress={(e) => {
+                                                                    if (e.key.match(/[0-9]/)) {
+                                                                        e.preventDefault();
+                                                                    }
+
+                                                                }}
+                                                                inputProps={{ maxLength: 20 }}
+                                                            />
+                                                            <div className='result_list1 fromInput'  >
+                                                                {Array.isArray(suggestion) && suggestion.map((info) => (
+                                                                    <ul key={info._id}>
+                                                                        <li
+                                                                            onClick={() => handleSuggestionClick(info.stopName)}
+                                                                        >
+                                                                            {info.stopName}
+                                                                        </li>
+                                                                    </ul>
+                                                                ))}
+                                                            </div>
+
+
+                                                            {errors.source && <div className="text-danger">{errors.source}</div>}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-4 col-md-6 col-sm-12">
+                                                    <div className="selectToLocation">
+                                                        <div>
+                                                            <input
+                                                                id="outlined-basic"
+                                                                placeholder='Arrival City'
+                                                                variant="outlined"
+                                                                onChange={handleDestination}
+                                                                value={destination}
+                                                                name="destination"
+                                                                style={{ "position": "relative" }}
+                                                                onKeyPress={(e) => {
+                                                                    if (e.key.match(/[0-9]/)) {
+                                                                        e.preventDefault();
+                                                                    }
+
+                                                                }}
+                                                                inputProps={{ maxLength: 20 }}
+
+                                                            />
+
+                                                            <div className='result_list1 fromInput' >
+                                                                {Array.isArray(destinationSuggestion) && destinationSuggestion.map((info) => (
+                                                                    <ul key={info._id}>
+                                                                        <li
+                                                                            onClick={() => handleSuggestionClick1(info.stopName)}
+                                                                        >
+                                                                            {info.stopName}
+                                                                        </li>
+                                                                    </ul>
+                                                                ))}
+                                                            </div>
+
+                                                        </div>
+                                                        {errors.destination && <div className="text-danger">{errors.destination}</div>}
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-4 col-md-6 col-sm-12">
+                                                    <div className="selectDate">
+                                                        <TextField
+                                                            id="outlined-size-small"
+                                                            variant="outlined"
+                                                            size="small"
+                                                            type='date'
+                                                            sx={{ width: 200 }}
+                                                            onChange={(e) => setDate(e.target.value)}
+                                                            value={date}
+                                                            name="date"
+                                                            inputProps={{ min: minDate }}
+                                                            style={{ "backgroundColor": "transparent", "minHeight": "44px" }}
+                                                        />
+                                                    </div>
+                                                    {errors.date && <div className="text-danger">{errors.date}</div>}
+                                                </div>
+                                                <div className="col-lg-12 col-md-12 col-sm-12">
+                                                    <div>
+                                                        <button
+                                                            onclick="window.open('bus_tickets.html')"
+                                                            className="bookTicketBtn"
+                                                        >
+                                                           {t('Search Buses')}{" "}
+                                                        </button>
+                                                    </div>
+                                                </div>
+>>>>>>> origin/master
                                             </form>
                                         </div>
                                     </div>
@@ -576,7 +781,11 @@ export default function BookYourTicket() {
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
                                     <div className="phone_img">
+<<<<<<< HEAD
                                         <img src={phone} alt="" />
+=======
+                                        <img src={phone}  alt="" />
+>>>>>>> origin/master
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -606,7 +815,11 @@ export default function BookYourTicket() {
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
                                     <div className="phone_img">
+<<<<<<< HEAD
                                         <img src={email} alt="" />
+=======
+                                        <img src={email}  alt="" />
+>>>>>>> origin/master
                                     </div>
                                 </div>
                                 <div className="col-lg-7">

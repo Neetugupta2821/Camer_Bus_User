@@ -1,0 +1,104 @@
+
+/* Right side model style */
+
+.boardingORdroppingPopup .modal.show .modal-dialog {
+    transform: none;
+    position: fixed;
+    right: 0;
+    top: -1px;
+    bottom: 0;
+    margin: 0;
+    max-width: 45%;
+    width: 45%;    
+}
+.boardingORdroppingPopup .modal-content{
+    height: 100%;
+    border-radius: 0;
+}
+.informationTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    line-height: 26px;
+    border-bottom: 1px solid #dfdddd;
+    padding: 8px 0;
+}
+.informationForm {
+    padding: 20px;
+    box-shadow: 0px 0px 4px #c7c7c7;
+}
+.mainForm{
+
+}
+.inputLabel{
+    font-size: 14px;
+    color: #626060;
+    font-weight: 400;
+}
+h3.informationTitle span {
+    font-size: 24px;
+    margin-right: 8px;
+}
+.yourTicket{
+    font-size: 12px;
+    background-color: #281b84;
+    padding: 2px 4px;
+    color: #fff;
+}
+.GSTform{
+    margin-top: 20px;
+}
+.gst-check label{
+    font-weight: 500;
+    color: #000;
+}
+.passengerInformation {
+    height: 70%;
+    overflow: auto;
+}
+.passengerInformation::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.passengerInformation::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+.passengerInformation::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+.case_of_invalid{
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+}
+.ByclickingProceed{
+    font-size: 12px;
+    color: #4a4a4a;
+    padding-top: 14px;
+    margin: 0;
+}
+.proceedPay{
+    display: flex;
+    justify-content: space-between;
+}
+.totleAmt{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    line-height: 44px;
+}
+.totleAmt span{
+    padding-left: 20px;
+}
+.proceedBtnPay{
+    background: #281b84;
+    color: #fff;
+    border: 0;
+    padding: 7px 20px;
+    margin-top: 8px;
+}
+.popupFooter {
+    border-top: 1px solid #aaa;
+}

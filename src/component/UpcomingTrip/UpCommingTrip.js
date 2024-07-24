@@ -11,6 +11,7 @@ import axios from 'axios'
 import { BaseUrl } from '../../Api/BaseUrl';
 import { useLocation } from 'react-router-dom'
 import swal from 'sweetalert2'
+<<<<<<< HEAD
 import { useTranslation } from 'react-i18next';
 import EastIcon from '@mui/icons-material/East';
 // import { useLocation } from 'react-router-dom'
@@ -18,6 +19,13 @@ export default function UpCommingTrip() {
     const { t, i18n } = useTranslation();
     const location = useLocation()
     const { data, data2,bookingId } = location.state
+=======
+
+// import { useLocation } from 'react-router-dom'
+export default function UpCommingTrip() {
+    const location = useLocation()
+    const { data, data2 } = location.state
+>>>>>>> origin/master
     console.log(data)
     console.log(data2)
     const [open, setOpen] = React.useState(false);
@@ -26,8 +34,12 @@ export default function UpCommingTrip() {
     const [NewTripId, setNewTipId] = useState("")
     const [UpBookId, setUpBookId] = useState("")
     const [Trip, setTrip] = useState([])
+<<<<<<< HEAD
     // const [isLoading, setIsLoading] = useState(false);
     const [jobErr, setJobErr] = useState(false);
+=======
+    const [isLoading, setIsLoading] = useState(false);
+>>>>>>> origin/master
     const [error, seterror] = useState({
         error: {
 
@@ -38,6 +50,7 @@ export default function UpCommingTrip() {
     };
 
     useEffect(() => {
+<<<<<<< HEAD
         let timerInterval;
 
         swal.fire({
@@ -69,6 +82,15 @@ export default function UpCommingTrip() {
         }).catch((error) => {
             console.log(error)
             swal.close(); // Close the SweetAlert popup
+=======
+        setIsLoading(true);
+        axios.post(`${BaseUrl}getUpcomingTrip_for_DateChange?sourceStop=${data}&destinationStop=${data2}`).then((response) => {
+            console.log(response.data.trips, "this is myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")
+            setTrip(response.data.trips)
+            setIsLoading(false);
+        }).catch((error) => {
+            console.log(error)
+>>>>>>> origin/master
         })
     }, [])
     const handleUpcomingTrip = (e, id) => {
@@ -79,6 +101,7 @@ export default function UpCommingTrip() {
 
     }
     const handleBookUpComingTrip = () => {
+<<<<<<< HEAD
         setJobErr({
             UpBookId: false,
 
@@ -90,6 +113,8 @@ export default function UpCommingTrip() {
         if (!UpBookId) {
             return;
         }
+=======
+>>>>>>> origin/master
         axios.post(`${BaseUrl}changeTrip`, {
             bookingId: UpBookId,
             newTripId: NewTripId
@@ -97,6 +122,7 @@ export default function UpCommingTrip() {
             console.log(response)
             if (response.status === 200) {
                 setOpen(false);
+<<<<<<< HEAD
             }  
 
             swal.fire(
@@ -109,6 +135,18 @@ export default function UpCommingTrip() {
             seterror({ isarray: true, error: error })
             swal.fire("Error", `${t(error?.response?.data?.error)}`, "error");
             swal.fire("Error", `${t(error?.response?.data?.message)}`, "error");
+=======
+            } else {
+
+            }
+            swal.fire(
+                `Trip changed successfully`,
+                'success'
+            )
+        }).catch((error) => {
+            seterror({ isarray: true, error: error })
+            console.log(error)
+>>>>>>> origin/master
         })
     }
     return (
@@ -118,8 +156,13 @@ export default function UpCommingTrip() {
                     <div className="row justify-content-center">
                         <div className="col-md-6">
                             <div className="innerBannerCont">
+<<<<<<< HEAD
                                 <h2>{("Bus Tickets")}</h2>
                                 <p>{("Be comfortable while you travel with our reliable bus rental.")}</p>
+=======
+                                <h2>Bus Tickets</h2>
+                                <p>Be comfortable while you travel with our reliable bus rental.</p>
+>>>>>>> origin/master
 
                             </div>
                         </div>
@@ -131,6 +174,7 @@ export default function UpCommingTrip() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
+<<<<<<< HEAD
                             {/* <div className='d-flex align-items-center justify-content-center'>
                                 {isLoading && (<div class="spinner-border" role="status">
                                     <span class="visually-hidden">Loading...</span>
@@ -138,47 +182,84 @@ export default function UpCommingTrip() {
                             </div> */}
 
                             {Trip.length === 0 ? "No Trip Found" : (<div className="sort-results">
+=======
+                            <div className='d-flex align-items-center justify-content-center'>
+                                {isLoading && (<div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>)}
+                            </div>
+
+                            {Trip.length === 0 ? null : (<div className="sort-results">
+>>>>>>> origin/master
                                 <ul className="sort-sec">
                                     <li className="filterlist w-22 dis-flex">
                                         <span className="busFound">
                                             <span className="f-bold busFound">81 Buses </span>
+<<<<<<< HEAD
                                             {t("found")}
+=======
+                                            found
+>>>>>>> origin/master
                                         </span>
                                         <span className="f-bold busFound">SORT BY:</span>
                                     </li>
                                     <li className="filterlist">
                                         <a>
+<<<<<<< HEAD
                                             {t("Departure")}
+=======
+                                            Departure
+>>>>>>> origin/master
                                             <i className="" />
                                         </a>
                                     </li>
                                     <li className="filterlist">
                                         <a>
+<<<<<<< HEAD
                                             {t("Duration")}
+=======
+                                            Duration
+>>>>>>> origin/master
                                             <i className="" />
                                         </a>
                                     </li>
                                     <li className="filterlist">
                                         <a>
+<<<<<<< HEAD
                                             {t("Arrival")}
+=======
+                                            Arrival
+>>>>>>> origin/master
                                             <i className="" />
                                         </a>
                                     </li>
                                     <li className="filterlist">
                                         <a>
+<<<<<<< HEAD
                                             {t("Ratings")}
+=======
+                                            Ratings
+>>>>>>> origin/master
                                             <i className="" />
                                         </a>
                                     </li>
                                     <li className="filterlist">
                                         <a>
+<<<<<<< HEAD
                                             {t("Fare")}
+=======
+                                            Fare
+>>>>>>> origin/master
                                             <i className="icon-down-arrow" />
                                         </a>
                                     </li>
                                     <li className="filterlist">
                                         <a>
+<<<<<<< HEAD
                                             {t("Seats Available")}
+=======
+                                            Seats Available
+>>>>>>> origin/master
                                             <i className="" />
                                         </a>
                                     </li>
@@ -217,7 +298,11 @@ export default function UpCommingTrip() {
                                                     <li className="column-five">
                                                         <div className="fontMDtext">Starts from</div>
                                                         <div className="font-s inrPrice">
+<<<<<<< HEAD
                                                         FCFA <dl>1398 </dl> <strong>1328</strong>
+=======
+                                                            INR <dl>1398 </dl> <strong>1328</strong>
+>>>>>>> origin/master
                                                         </div>
                                                         <div className="font-s marTop10 saleIcon">
                                                             camer Travel applied
@@ -267,7 +352,10 @@ export default function UpCommingTrip() {
                                                     </a>
                                                 </div>
                                                 <div className="returnTrip">
+<<<<<<< HEAD
                                                 <h6>{info.trip.source} <EastIcon />{info.trip.destination}</h6>
+=======
+>>>>>>> origin/master
                                                     <p>
                                                         <strong>Return Trip camer Travel </strong> : Unlock min. 10%
                                                         OFF on return ticket
@@ -275,6 +363,7 @@ export default function UpCommingTrip() {
                                                 </div>
                                             </div>
                                             <div className="row-three mt-3">
+<<<<<<< HEAD
                                             <ul className="bottom-panel">
                                                     <li className="amenties b-p-list max_width_1">
                                                         <span className="txt-val ">{t("Amenities")}</span>
@@ -298,6 +387,31 @@ export default function UpCommingTrip() {
                                                 <div className="viewSeatsBtn">
                                                     {/* onClick={(e) => handlfunction(info.trip._id)} */}
                                                     <a href="" onClick={(e) => handleUpcomingTrip(e, info.trip._id)} >{t('Change Trip')}</a>
+=======
+                                                <ul className="bottom-panel">
+                                                    <li className="amenties b-p-list">
+                                                        <span className="txt-val ">Amenities</span>
+                                                    </li>
+                                                    <li className="amenties b-p-list">
+                                                        <span className="txt-val ">Bus Photos</span>
+                                                    </li>
+                                                    <li className="amenties b-p-list">
+                                                        <span className="txt-val ">Boarding Dropping Points</span>
+                                                    </li>
+                                                    <li className="amenties b-p-list">
+                                                        <span className="txt-val ">Reviews</span>
+                                                    </li>
+                                                    <li className="amenties b-p-list">
+                                                        <span className="txt-val ">Booking policies</span>
+                                                    </li>
+                                                    <li className="amenties b-p-list">
+                                                        <span className="txt-val ">Bus Route</span>
+                                                    </li>
+                                                </ul>
+                                                <div className="viewSeatsBtn">
+                                                    {/* onClick={(e) => handlfunction(info.trip._id)} */}
+                                                    <a href="" onClick={(e) => handleUpcomingTrip(e, info.trip._id)} >Change Trip</a>
+>>>>>>> origin/master
                                                 </div>
                                             </div>
 
@@ -337,12 +451,16 @@ export default function UpCommingTrip() {
                                 <Box>
                                     <TextField fullWidth label="booking ID" id="fullWidth" size="small" sx={{ width: 400 }} onChange={(e) => setUpBookId(e.target.value)}
                                     /><br></br>
+<<<<<<< HEAD
                                     <span style={{ color: "red" }}>
                                         {jobErr && !UpBookId
                                             ? "*Please Enter Your Booking Id."
                                             : ""}
                                     </span>
                                     {/* {error.isarray ? <div className="text-danger">{error.error.response.data.message}</div> : ""} */}
+=======
+                                    {error.isarray ? <div className="text-danger">{error.error.response.data.message}</div> : ""}
+>>>>>>> origin/master
                                 </Box><br></br>
 
                                 <Button variant="contained" size="small" sx={{ width: 100 }} onClick={handleBookUpComingTrip}>Submit</Button>

@@ -153,7 +153,11 @@ export default function Footer() {
                   selected={select}
                   onSelect={onSelect}
                   countries={["fi", "GB", "FR"]}
+<<<<<<< HEAD
                   placeholder={t("Select Language")}
+=======
+                  placeholder="Select Language"
+>>>>>>> origin/master
 
                 /></div>
                 {/* <div>

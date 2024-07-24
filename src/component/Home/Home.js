@@ -1,6 +1,10 @@
 import React from 'react'
  
+<<<<<<< HEAD
  import Banner from '../TicketBooking/Banner'
+=======
+import Banner from './Banner'
+>>>>>>> origin/master
 import Rental_bus from './Rental_bus'
 import WhoAre from './WhoAre'
 import Transportation from './Transportation'

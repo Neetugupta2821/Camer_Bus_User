@@ -65,9 +65,15 @@ export default function ChooseBus() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
+<<<<<<< HEAD
             {/* <a href="#!" className="viewDetailBtn">
               View Detail
             </a> */}
+=======
+            <a href="#!" className="viewDetailBtn">
+              View Detail
+            </a>
+>>>>>>> origin/master
           </div>
         </div>
       </div>
@@ -105,9 +111,15 @@ export default function ChooseBus() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
+<<<<<<< HEAD
             {/* <a href="#!" className="viewDetailBtn">
               View Detail
             </a> */}
+=======
+            <a href="#!" className="viewDetailBtn">
+              View Detail
+            </a>
+>>>>>>> origin/master
           </div>
         </div>
       </div>
@@ -145,9 +157,15 @@ export default function ChooseBus() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
+<<<<<<< HEAD
             {/* <a href="#!" className="viewDetailBtn">
               View Detail
             </a> */}
+=======
+            <a href="#!" className="viewDetailBtn">
+              View Detail
+            </a>
+>>>>>>> origin/master
           </div>
         </div>
       </div>

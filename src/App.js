@@ -2,6 +2,7 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom"
 import Home from './component/Home/Home';
+<<<<<<< HEAD
 import Login from './component/User-signin/Login';
 import Signup from './component/User-signin/Signup';
 import Aboutus from './component/AboutUs/Aboutus';
@@ -17,6 +18,23 @@ import ProccessToPay from '../src/component/TicketBooking/ProccessToPay'
 import Contact from './component/ContactUs/Contact';
 import UpCommingTrip from './component/UpcomingTrip/UpCommingTrip';
 import NewOtp from './component/User-signin/NewOtp';
+=======
+import Login from './component/signin/Login';
+import Signup from './component/signin/Signup';
+import Aboutus from './component/AboutUs/Aboutus';
+import Event from './component/Event/Event';
+import SearchBus from './component/Home/SearchBus';
+import Header from './component/Home/Header';
+import Footer from './component/Home/Footer';
+import Profile from './component/signin/Profile';
+import ResetPassword from './component/signin/ResetPassword';
+import ForgetPasword from './component/signin/ForgetPasword';
+import MyBooking from './component/MyTrip/MyBooking';
+import ProccessToPay from './component/Home/ProccessToPay';
+import Contact from './component/ContactUs/Contact';
+import UpCommingTrip from './component/UpcomingTrip/UpCommingTrip';
+import NewOtp from './component/signin/NewOtp';
+>>>>>>> origin/master
 import ScrollToTop from './component/ScrollToTop';
 import { ThemeContext } from './component/Context/Context'
 import { useState } from 'react';
@@ -34,6 +52,7 @@ import FirstClass from './component/Event/FirstClass';
 import OurTeam from './component/AboutUs/OurTeam';
 import OurFleet from './component/AboutUs/OurFleet';
 import TermsConditions from './component/AboutUs/TermsConditions';
+<<<<<<< HEAD
 import RoundTrip from './component/TicketBooking/RoundTrip';
 
 function App() {
@@ -42,6 +61,15 @@ function App() {
   const switchType = localStorage.getItem("switchMode");
   const [theme, setTheme] = useState(switchType);
   console.log('New change to the fileeeeeeeeeeeeeeeeeeeee');
+=======
+
+function App() {
+
+  console.log("time=05:37pm date:14/03/2024")
+  const switchType = localStorage.getItem("switchMode");
+  const [theme, setTheme] = useState(switchType);
+
+>>>>>>> origin/master
 
   return (
 
@@ -77,10 +105,15 @@ function App() {
           <Route path="/RegularTravel" element={<RegularTravel/>} />
           <Route path="/FirstClass" element={<FirstClass/>} />
           <Route path="/OurTeam" element={<OurTeam/>} />
+<<<<<<< HEAD
           <Route path="/OurFleet" element={<OurFleet/>} /> 
           <Route path="/TermsConditions" element={<TermsConditions/>} />
           <Route path="/RoundTrip" element={<RoundTrip/>} />
 
+=======
+          <Route path="/OurFleet" element={<OurFleet/>} />
+          <Route path="/TermsConditions" element={<TermsConditions/>} />
+>>>>>>> origin/master
           
         </Routes>
 

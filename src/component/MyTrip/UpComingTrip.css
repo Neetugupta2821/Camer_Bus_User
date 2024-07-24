@@ -33,7 +33,11 @@ ul.sort-sec li a {
 
 ul.sort-sec {
     display: flex;
+<<<<<<< HEAD
     color: black;
+=======
+    color: black
+>>>>>>> origin/master
 }
 
 ul.sort-sec li {
@@ -53,7 +57,11 @@ li.filterlist.w-22 {
 }
 
 .row-one {
+<<<<<<< HEAD
     width: 1117px;
+=======
+    width: 1076px;
+>>>>>>> origin/master
     overflow-x: auto;
 }
 
@@ -129,7 +137,11 @@ li.filterlist.w-22 {
 
 .row-two {
     display: flex;
+<<<<<<< HEAD
     width: 1117px;
+=======
+    width: 1076px;
+>>>>>>> origin/master
 }
 
 .amenities-ul {
@@ -168,7 +180,11 @@ ul.amenities-ul li a i {
 .row-three {
     display: flex;
     justify-content: start;
+<<<<<<< HEAD
     width: 1117px;
+=======
+    width: 1076px;
+>>>>>>> origin/master
 }
 
 .bottom-panel {
